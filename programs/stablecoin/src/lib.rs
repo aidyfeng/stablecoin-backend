@@ -44,4 +44,8 @@ pub mod stablecoin {
             amount_to_burn,
         )
     }
+
+    pub fn liquidate(ctx: Context<Liquidate>, amount_to_burn: u64) -> Result<()> {
+        instructions::process_liquidate(ctx, amount_to_burn)
+    }
 }
