@@ -1,4 +1,4 @@
-use anchor_lang::{accounts::account_loader, prelude::*};
+use anchor_lang::prelude::*;
 use anchor_spl::{
     token_2022::Token2022,
     token_interface::{Mint, TokenAccount},

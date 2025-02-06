@@ -7,7 +7,7 @@ use anchor_spl::{
     token_interface::{Mint, TokenAccount},
 };
 
-use crate::constants::{SEED_CONFIG_ACCOUNT, SEED_SOL_ACCOUNT};
+use crate::constants::SEED_SOL_ACCOUNT;
 
 pub fn withdraw_sol<'info>(
     bump: u8,
