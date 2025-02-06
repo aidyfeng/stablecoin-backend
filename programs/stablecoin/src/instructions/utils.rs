@@ -54,6 +54,7 @@ pub fn get_usd_value(lamport_balance: &u64, price_feed: &PriceUpdateV2) -> Resul
 pub fn get_lamports_from_usd(amount_in_usd: &u64, price_feed: &PriceUpdateV2) -> Result<u64> {
     let feed_id = get_feed_id_from_hex(FEED_ID)?;
     let price = price_feed.get_price_no_older_than(&Clock::get()?, MAXIMUM_AGE, &feed_id)?;
+    msg!("sol/usd price : {}",price.price);
     require!(price.price > 0, CustomError::InvalidPrice);
     let price_in_usd = price.price as u128 * PRICE_FEED_DECIMAL_ADJUSTMENT;
 

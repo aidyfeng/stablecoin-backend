@@ -1,7 +1,7 @@
 use crate::instructions::*;
 use anchor_lang::prelude::*;
 
-declare_id!("CZPGAfzFybi2i7tZyyRe2i1FM4E5G3BhkD18rEbL3PgL");
+declare_id!("3outXKnA5HDH5M8ghoMP8ANf8QHVnhxnxLkCP5RBVzmS");
 
 mod constants;
 mod error;
